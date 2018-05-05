@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:700|Roboto:900" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/favicons/favicon1.png" sizes="16x16">
+  
+  <title>eeeeeeeee</title>
+</head>
+<body id="body">
+  
+  <section id="section1"></section>
+  <section id="section2"></section>
+  <section id="section3"></section>
+  <section id="section4"></section>
+  <section id="section5"></section>
+  <section id="section6"></section>
+  <section id="section7"></section>
+  <section id="section8"></section>
+  <section id="section9"></section>
+  
+  <section id="section0"></section>
+  <script src="">
+    const sections = document.querySelectorAll('section')
+    const colors = ['tomato', 'orange', 'yellow', 'cyan', 'dodgerblue', 'violet']
+
+    window.setInterval(() => {
+      for (let i = 0; i < sections.length; i++) {
+        
+        sections[i].style.backgroundColor = colors[i]
+      }
+      // colors.push(colors.shift())
+      colors.sort(function() { return 0.5 - Math.random() });
+      
+    }, 2000)
+  
+  </script>
+
+
+
+<script src="assets/js/eraser.js"></script>
+<script src="assets/js/ball.js"></script>
+<script src="assets/js/draw.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/something.js"></script>
+<script src="assets/js/slider.js"></script>
+<script src="assets/js/clones.js"></script>
+<script src="assets/js/water.js"></script>
+<script src="assets/js/wind.js"></script>
+
+<script src="assets/js/ryu.js"></script>
+
+<script>
+  const sections = document.querySelectorAll('section')
+  eraserJS(sections[0])
+  ballJS(sections[1])
+  drawJS(sections[2])
+  scrollJS(sections[3])
+  somethingJS(sections[4])
+  sliderJS(sections[5])
+  clonesJS(sections[6])
+  waterJS(sections[7])
+  windJS(sections[8])
+
+  ryuJS(sections[sections.length-1])
+
+
+  function addHTML(container, html) {
+    container.innerHTML += html
+  }
+  function addCSS(css) {
+    const style = document.createElement('style')
+    style.innerHTML = css
+    document.head.appendChild(style)
+  }
+  function hoverCheck(x, y, zone) {
+    if ((x > zone.x && x < zone.x + zone.width) && (y > zone.y && y < zone.y + zone.height)) {
+      return true
+    }
+    return false
+  }
+</script>
+
+<script>
+  const favicon = document.querySelector('link[rel="icon"]')
+  let i = 1
+
+  window.setInterval(() => {
+    favicon.setAttribute('href', `assets/favicons/favicon${i}.png`)
+    i = i<9 ? i+1 : 1
+  }, 500)
+
+  
+
+</script>
+
+</body>
+</html>
