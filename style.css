@@ -1,0 +1,22 @@
+.body {
+  background-color: #F9DF4B;
+  user-select: none;
+  overflow: hidden;
+  color: white;
+  font-family: Raleway, sans-serif;
+  font-weight: 900;
+}
+.main {
+  height: 100vh;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+section {
+  overflow: hidden;
+  border: 1px solid #F9DF4B;
+  transition: border .25s linear;
+}
+section:hover {
+  border: 1px solid #fff;
+}
