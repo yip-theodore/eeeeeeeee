@@ -4,6 +4,7 @@ function clones(section) {
   `)
   css (`
   #${section.id} {
+    cursor: none;
   }
   #${section.id} .background {
     width: 300vw;
@@ -22,8 +23,8 @@ function clones(section) {
     // background.classList.toggle('on', hoverCheck(event.clientX, event.clientY, zone))
     
     background.style.transform =
-    `translate(calc(${event.clientX + 32}px - 50%),
-    calc(${event.clientY + 12}px - 50%))`
+    `translate(calc(${event.clientX + 28}px - 50%),
+    calc(${event.clientY + 14}px - 50%))`
   })
 
   window.addEventListener('mousedown', () => {

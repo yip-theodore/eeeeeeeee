@@ -15,6 +15,7 @@ function fruits(section) {
   #${section.id} {
     position: relative;
     overflow: hidden;
+    cursor: url('img/fruits2.png') 8 8, auto;
   }
   #${section.id} .box {
     transform: skewY(-10deg);

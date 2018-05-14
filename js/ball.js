@@ -7,6 +7,7 @@ function ball(section) {
   css(`
   #${section.id} {
     display: flex;
+    cursor: url('img/ball2.png') 1 1, auto;
   }
   #${section.id} canvas {
   }

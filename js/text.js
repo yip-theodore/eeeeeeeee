@@ -23,6 +23,8 @@ function text(section) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: url('img/text2.png') 8 8, auto;
+    
   }
   #${section.id} .container {
   }
@@ -39,9 +41,9 @@ function text(section) {
   `)
 
   const sentences = [
-    ['DID', 'YOU', 'JUST'],
-    ['SAY', '-', 'WHAT'],
-    ['DID', 'YOU', 'JUST'],
+    ['DOES', 'ANYONE', 'CARE ?'],
+    ['I DO', 'LIKE', 'YELLOW.'],
+    ['DOES', 'ANYONE', 'CARE ?'],
   ]
   const zone = section.getBoundingClientRect()
 

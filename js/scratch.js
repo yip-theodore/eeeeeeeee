@@ -21,6 +21,7 @@ function scratch(section) {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: url('img/scratch2.png') 6 16, auto;
   }
   #${section.id} .container {
     position: relative;

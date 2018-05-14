@@ -7,6 +7,7 @@ function waves(section) {
   css(`
   #${section.id} {
     display: flex;
+    cursor: url('img/waves2.png') 7 16, auto;
   }
   `)
   const canvas = document.querySelector(`#${section.id} #canvas`)
@@ -26,7 +27,7 @@ function waves(section) {
     let newWave = {
       cx: event.clientX - canvRect.x,
       cy: event.clientY - canvRect.y,
-      r: 10,
+      r: 0,
     }
     drawC(newWave)
     waves.push(newWave)

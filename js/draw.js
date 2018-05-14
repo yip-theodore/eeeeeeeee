@@ -7,6 +7,7 @@ function draw(section) {
   css(`
   #${section.id} {
     display: flex;
+    cursor: url('img/draw2.png') 5 16, auto;
   }
   `)
 

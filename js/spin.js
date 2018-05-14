@@ -9,6 +9,7 @@ function spin(section) {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: url('img/spin2.png') 8 8, auto;
   }
   #${section.id} .handspinner {
     width: 12vw;
